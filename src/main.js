@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router'
 import './axios.js'
 
-import './assets/main.css'
+import './style.css'
 
 const app = createApp(App);
 app.use(router).mount('#app');

@@ -1,5 +1,7 @@
 <template>
-  <TheHeader/>
+  <TheTopHeader/>
+
+  <TheTopMenu/>
 
   <router-view/>
 
@@ -7,6 +9,7 @@
 </template>
 
 <script setup>
-import TheHeader from "./includes/TheHeader.vue";
+import TheTopHeader from "./includes/TheTopHeader.vue";
+import TheTopMenu from "./includes/TheTopMenu.vue";
 import TheFooter from "./includes/TheFooter.vue";
 </script>
