@@ -1,8 +1,7 @@
 import {createRouter, createWebHistory} from 'vue-router'
 
 import TheHome from '../components/pages/TheHome.vue'
-import TheRecipeDetail from '../components/pages/TheRecipeDetail.vue'
-
+import TheCatalog from '../components/pages/TheCatalog.vue'
 
 const routes = [
     {
@@ -22,15 +21,15 @@ const routes = [
         }
     },
     {
-        path: '/recipes/:id',
-        name: 'TheRecipeDetail',
-        component: TheRecipeDetail,
+        path: '/catalog/',
+        name: 'TheCatalog',
+        component: TheCatalog,
         meta: {
             layout: 'TheDefault',
-            header: 'Детальная страница рецепта',
+            header: 'Каталог',
             breadCrumbs: [
                 {
-                    title: 'Детальная страница рецепта',
+                    title: 'Каталог',
                     linkName: null,
                     current: true
                 }

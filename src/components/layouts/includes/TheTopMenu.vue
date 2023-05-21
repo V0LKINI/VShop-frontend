@@ -2,7 +2,7 @@
 
 const links = [
   {id: 1, name: 'Главная', href: '/'},
-  {id: 2, name: 'Детальная рецепта', href: '/recipes/2603'},
+  {id: 2, name: 'Каталог', href: '/catalog/'},
 ];
 
 </script>
