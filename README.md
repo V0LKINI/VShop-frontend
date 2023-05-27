@@ -1,29 +1,7 @@
-# vshop
+## Installation
 
-This template should help get you started developing with Vue 3 in Vite.
+- Install git and docker on your system. If you use windows, install docker desktop and ubuntu. Ubuntu can be downloaded through the Microsoft Store. In the docker settings, go to Resources->WSL integration and select Ubuntu. Then go to \\wsl.localhost\Ubuntu-20.04\home\{{your user}}, create a folder with the project.
+- Clone the project: $git clone https://github.com/V0LKINI/vshop-frontend.git
+- Run containers: $docker-compose up -d
+- Go to http://localhost:8081
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
