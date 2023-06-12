@@ -7,6 +7,7 @@ const links = [
 
 </script>
 
+
 <template>
   <div class="w-full ">
     <ul>
@@ -18,8 +19,3 @@ const links = [
     </ul>
   </div>
 </template>
-
-
-<style scoped>
-
-</style>

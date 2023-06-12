@@ -1,19 +1,19 @@
 import {createRouter, createWebHistory} from 'vue-router'
 
-import TheHome from '../components/pages/TheHome.vue'
-import TheCatalog from '../components/pages/TheCatalog.vue'
+import Home from '../views/Home.vue'
+import Catalog from '../views/Catalog.vue'
 
 const routes = [
     {
         path: '/',
-        name: 'TheHome',
-        component: TheHome,
+        name: 'Home',
+        component: Home,
         meta: {
-            layout: 'TheDefault',
-            header: 'Рецепты',
+            layout: 'Default',
+            header: 'Главная',
             breadCrumbs: [
                 {
-                    title: 'Рецепты',
+                    title: 'Главная',
                     linkName: null,
                     current: true
                 }
@@ -22,10 +22,10 @@ const routes = [
     },
     {
         path: '/catalog/',
-        name: 'TheCatalog',
-        component: TheCatalog,
+        name: 'Catalog',
+        component: Catalog,
         meta: {
-            layout: 'TheDefault',
+            layout: 'Default',
             header: 'Каталог',
             breadCrumbs: [
                 {

@@ -5,7 +5,7 @@
 <script setup>
 import {computed} from "vue";
 import {useRoute} from 'vue-router'
-import TheDefault from "./components/layouts/TheDefault.vue";
+import TheDefault from "./views/layouts/Default.vue";
 
 const route = useRoute();
 
