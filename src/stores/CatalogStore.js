@@ -5,7 +5,7 @@ import {ref} from 'vue';
 export const useCatalogStore = defineStore('catalogStore', () => {
     const categoryGroups = ref([]);
 
-    const getCategoryGroups = async (params = null, url = '/categoryGroups/list/') => {
+    const getCategories = async (params = null, url = '/categories/list/') => {
         let config = {
             params: params,
         }
@@ -20,6 +20,6 @@ export const useCatalogStore = defineStore('catalogStore', () => {
 
     return {
         categoryGroups,
-        getCategoryGroups,
+        getCategories,
     }
 })

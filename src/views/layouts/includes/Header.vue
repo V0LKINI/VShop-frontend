@@ -1,6 +1,6 @@
 <script setup>
   import TopMenu from "./TopMenu.vue";
-  import CategoryGroupMenu from "./CategoryGroupMenu.vue";
+  import CategoriesMenu from "./CategoriesMenu.vue";
   import Search from "../../../components/Search.vue";
   import Logo from "./Logo.vue";
 </script>
@@ -13,5 +13,5 @@
         <TopMenu/>
     </div>
 
-  <CategoryGroupMenu/>
+  <CategoriesMenu/>
 </template>
