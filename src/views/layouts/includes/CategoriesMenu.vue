@@ -1,19 +1,19 @@
 <script setup>
 
 import {useRoute} from 'vue-router'
-import {useCatalogStore} from "../../../stores/CatalogStore";
+import {useMenuStore} from "../../../stores/MenuStore";
 
 const route = useRoute();
-const catalogStore = useCatalogStore();
+const menuStore = useMenuStore();
 
-catalogStore.getCategories();
+menuStore.getCategories();
 
 </script>
 
 <template>
   <div class="w-full ">
-    <ul class="flex justify-between">
-      <li class="group rounded-md py-2" v-for="categoryGroup in catalogStore.categoryGroups" :key="categoryGroup.id"
+    <ul class="flex justify-between mt-2">
+      <li class="group rounded-md py-2" v-for="categoryGroup in menuStore.categoryGroups" :key="categoryGroup.id"
           :class=" { 'bg-main-second text-white': route.path.indexOf(/catalog/ + categoryGroup.code) >= 0,
                       'hover:bg-hover': route.path.indexOf(/catalog/ + categoryGroup.code) === -1 }">
         <router-link :to="/catalog/ + categoryGroup.code + '/'" class="px-4">

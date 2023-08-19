@@ -2,24 +2,24 @@ import {defineStore} from 'pinia'
 import axios from "axios";
 import {ref} from 'vue';
 
-export const useCatalogStore = defineStore('catalogStore', () => {
-    const categoryGroups = ref([]);
+export const useHomeStore = defineStore('homeStore', () => {
+    const banner = ref('');
 
-    const getCategories = async (params = null, url = '/categories/list/') => {
+    const getData = async (params = null, url = '/home/') => {
         let config = {
             params: params,
         }
 
         await axios.get(url, config)
             .then((r) => {
-                categoryGroups.value = r.data.data;
+                banner.value = r.data.data.settings.banner;
             }).catch((e) => {
                 console.log(e);
             })
     };
 
     return {
-        categoryGroups,
-        getCategories,
+        banner,
+        getData,
     }
 })
