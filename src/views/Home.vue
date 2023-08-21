@@ -7,13 +7,18 @@
 
   homeStore.getData();
 
-  console.log(12345, homeStore.banner)
 </script>
 
 <template>
 
 <div>
     <img class="mt-6 rounded-lg" :src="homeStore.banner.value" alt="">
+</div>
+
+<div class="grid grid-cols-5 gap-4 place-items-start mt-5">
+    <div v-for="offer in homeStore.offers">
+        <img :src="offer.images[0].image" alt="">
+    </div>
 </div>
 
 </template>

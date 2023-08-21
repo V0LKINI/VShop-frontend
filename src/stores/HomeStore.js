@@ -4,6 +4,7 @@ import {ref} from 'vue';
 
 export const useHomeStore = defineStore('homeStore', () => {
     const banner = ref('');
+    const offers = ref([]);
 
     const getData = async (params = null, url = '/home/') => {
         let config = {
@@ -12,6 +13,7 @@ export const useHomeStore = defineStore('homeStore', () => {
 
         await axios.get(url, config)
             .then((r) => {
+                offers.value = r.data.data.offers;
                 banner.value = r.data.data.settings.banner;
             }).catch((e) => {
                 console.log(e);
@@ -20,6 +22,7 @@ export const useHomeStore = defineStore('homeStore', () => {
 
     return {
         banner,
+        offers,
         getData,
     }
 })
