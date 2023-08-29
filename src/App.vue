@@ -2,10 +2,11 @@
   <component :is="layout"/>
 </template>
 
+
 <script setup>
 import {computed} from "vue";
 import {useRoute} from 'vue-router'
-import TheDefault from "./views/layouts/Default.vue";
+import TheDefault from "./components/layouts/TheDefault.vue";
 
 const route = useRoute();
 

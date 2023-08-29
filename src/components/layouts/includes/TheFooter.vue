@@ -1,13 +1,3 @@
-<script setup>
-
-const links = [
-  {id: 1, name: 'Главная', href: '/'},
-  {id: 2, name: 'Каталог', href: '/catalog/'},
-];
-
-</script>
-
-
 <template>
   <div class="w-full ">
     <ul>
@@ -19,3 +9,13 @@ const links = [
     </ul>
   </div>
 </template>
+
+
+<script setup>
+const links = [
+  {id: 1, name: 'Главная', href: '/'},
+  {id: 2, name: 'Каталог', href: '/catalog/'},
+];
+</script>
+
+
